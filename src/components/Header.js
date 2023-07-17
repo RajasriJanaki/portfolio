@@ -22,6 +22,7 @@ const NavLink = ({ children }) => (
       bg: useColorModeValue('gray.200', 'gray.700'),
       color: 'black',
     }}
+    fontSize={{ base: 'xl', sm: '2md', md: '5md' }}
     href={'#'}>
     {children}
   </Link>
@@ -32,8 +33,8 @@ export default function Header() {
 
   return (
     <>
-      <Box bg={'#6750A4'}
-          color={'#FFFFFF'}
+      <Box bg={'#438496'}
+          color={'#DFDCE3'}
           px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={{base:'space-between', md: 'flex-end'}}>
           <IconButton

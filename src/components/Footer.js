@@ -9,8 +9,8 @@ import {
   export default function Footer() {
     return (
       <Box
-        bg={'#E8DEF8'}
-        color={'#21005E'}>
+        bg={'#438496'}
+        color={'#DFDCE3'}>
         <Container
           as={Stack}
           maxW={'6xl'}

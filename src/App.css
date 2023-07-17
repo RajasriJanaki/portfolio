@@ -1,11 +1,11 @@
 .App {
   text-align: center;
-  background-color: #FFFFFF;
+  background-color: #CD5360;
 }
 
 .light-box-container {
-  background-color: lightgray;
-  color: black;
+  background-color: #CD5360;
+  color: white;
 }
 
 .dark-box-container {
