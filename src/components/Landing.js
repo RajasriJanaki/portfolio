@@ -5,16 +5,10 @@ import {
     Text,
     Stack,
     Avatar,
-    IconButton,
-    Flex,
-    Icon
   } from '@chakra-ui/react';
-  import {
-    FaLinkedin,
-    FaGithub
-  } from "react-icons/fa";
-  import profile from "../assets/images/avatar.jpg";
-  
+import profile from "../assets/images/avatar.jpg";
+import SocialMediaLinks from './SocialMediaLinks';
+
   export default function Landing() {
     return (
       <>
@@ -48,24 +42,7 @@ import {
             </Heading>
           </Stack>
           <Avatar py={{ base: 10, md: 5 }} w={'xs'} h={'xs'} src={profile}></Avatar>
-          <Flex
-              gap={10}
-              display={'flex'}
-              py={{ base: 10, md: 16 }}
-              alignItems={'center'} justifyContent={'center'}>
-              <IconButton
-                w={'50px'} h={'50px'}
-                variant="outline"
-                aria-label="LinkedIn icon"
-                icon={<Icon as={FaLinkedin} w={'30px'} h={'30px'}/>}
-              />
-              <IconButton
-                variant="outline"
-                w={'50px'} h={'50px'}
-                aria-label="Github icon"
-                icon={<Icon as={FaGithub} w={'30px'} h={'30px'}/>}
-              />
-          </Flex>
+          <SocialMediaLinks />
         </Container>
       </>
     );
