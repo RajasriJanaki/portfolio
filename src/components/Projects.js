@@ -15,7 +15,7 @@ import {
   export default function Projects() {
     return (
       <Box p='20px'
-        color={'#DFDCE3'}>
+        color={'#DFDCE3'} m={'10'} id='Projects'>
         <Flex
           direction='column'
           alignItems='space-around'

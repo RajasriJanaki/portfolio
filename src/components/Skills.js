@@ -34,6 +34,7 @@ import {
               gap={10}
               display={'flex'}
               py={'5'}
+              wrap={'wrap'}
               alignItems={'center'} justifyContent={'center'}>
             <Badge variant='outline' colorScheme='green' fontSize='1.2em' >
               GitHub

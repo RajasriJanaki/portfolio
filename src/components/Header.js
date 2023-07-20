@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
-const Links = ['Dashboard', 'Projects', 'Team'];
+const Links = ['Projects'];
 
 const NavLink = ({ children }) => (
   <Link
@@ -23,7 +23,7 @@ const NavLink = ({ children }) => (
       color: 'black',
     }}
     fontSize={{ base: 'xl', sm: '2md', md: '5md' }}
-    href={'#'}>
+    href={'#'+children}>
     {children}
   </Link>
 );
