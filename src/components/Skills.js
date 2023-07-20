@@ -1,7 +1,11 @@
 import {
     IconButton,
     Flex,
-    Icon
+    Icon,
+    Button,
+    Badge,
+    Heading,
+    Text
   } from "@chakra-ui/react";
   import * as React from "react";
   import {
@@ -17,51 +21,51 @@ import {
 
   export default function Skills() {
     return (
+      <Flex
+        display={'flex'}
+        direction={'column'}
+        gap={'5'}>
+        <Text
+            as={'span'}
+            fontSize={{ base: 'lg', sm: 'xl', md: '2xl' }}>
+            Skills
+        </Text>
         <Flex
               gap={10}
               display={'flex'}
-              py={{ base: 10, md: 16 }}
+              py={'5'}
               alignItems={'center'} justifyContent={'center'}>
-            <IconButton
-                variant="outline"
-                w={'60px'} h={'60px'}
-                aria-label="Github icon"
-                icon={<Icon as={FaGithub} w={'50px'} h={'50px'}/>}
-              />
-            <IconButton
-                variant="outline"
-                w={'50px'} h={'50px'}
-                aria-label="Java icon"
-                icon={<Icon as={FaJava} w={'30px'} h={'30px'}/>}
-              />
-            <IconButton
-                variant="outline"
-                w={'50px'} h={'50px'}
-                aria-label="React icon"
-                icon={<Icon as={FaReact} w={'30px'} h={'30px'}/>}
-              />
-
-            <IconButton
-                variant="outline"
-                w={'50px'} h={'50px'}
-                aria-label="HTML icon"
-                icon={<Icon as={FaHtml5} w={'30px'} h={'30px'}/>}
-              />
-
-            <IconButton
-                variant="outline"
-                w={'50px'} h={'50px'}
-                aria-label="JS icon"
-                icon={<Icon as={SiJavascript} w={'30px'} h={'30px'}/>}
-              />
-
-            <IconButton
-                variant="outline"
-                w={'50px'} h={'50px'}
-                aria-label="Jenkins icon"
-                icon={<Icon as={FaJenkins} w={'30px'} h={'30px'}/>}
-              />
-
+            <Badge variant='outline' colorScheme='green' fontSize='1.2em' >
+              GitHub
+            </Badge>
+            <Badge variant='outline' colorScheme='green' fontSize='1.2em' >
+              Java
+            </Badge>
+            <Badge variant='outline' colorScheme='green' fontSize='1.2em' >
+              ReactJs
+            </Badge>
+            <Badge variant='outline' colorScheme='green' fontSize='1.2em' >
+              Graph QL
+            </Badge>
+            <Badge variant='outline' colorScheme='green' fontSize='1.2em' >
+              HTML5
+            </Badge>
+            <Badge variant='outline' colorScheme='green' fontSize='1.2em' >
+              Javascript
+            </Badge>
+            <Badge variant='outline' colorScheme='green' fontSize='1.2em' >
+              Jenkins
+            </Badge>
+            <Badge variant='outline' colorScheme='green' fontSize='1.2em' >
+              Artifactory
+            </Badge>
+            <Badge variant='outline' colorScheme='green' fontSize='1.2em' >
+              Webpack
+            </Badge>
+            <Badge variant='outline' colorScheme='green' fontSize='1.2em' >
+              MFE Architecture
+            </Badge>
         </Flex>
+      </Flex>
     );
   }

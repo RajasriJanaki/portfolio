@@ -5,6 +5,7 @@ import {
     Heading,
     Flex,
     Image,
+    Fade,
     Button
   } from '@chakra-ui/react';
   import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
@@ -14,9 +15,7 @@ import {
   export default function Projects() {
     return (
       <Box p='20px'
-        bg={'#438496'}
-        color={'#DFDCE3'}
-        h={'100vh'}>
+        color={'#DFDCE3'}>
         <Flex
           direction='column'
           alignItems='space-around'
@@ -36,7 +35,7 @@ import {
                   return <>
                     {job.projects.map((project) => {
                     return (
-                      <Card
+                        <Card
                           bg="#4A5568"
                           color="#F7FAFC"
                           direction={{ base: 'column', sm: 'row' }}
@@ -54,7 +53,7 @@ import {
 
                           <Stack>
                             <CardBody>
-                              <Heading size='md'>{project.title}</Heading>
+                              <Heading size='sm'>{project.title}</Heading>
 
                               <Text py='2'>
                                 {project.text}
@@ -67,7 +66,6 @@ import {
                   </>
                 })}
             </Flex>
-            <Skills />
         </Flex>
       </Box>
     );

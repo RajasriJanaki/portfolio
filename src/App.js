@@ -1,4 +1,5 @@
 import Header from './components/Header';
+import { Divider } from '@chakra-ui/react'
 import './App.css';
 import Landing from './components/Landing';
 import Footer from './components/Footer';
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
         <Header />
         <Landing />
+        <Divider width={'80%'} ml={'auto'} mr={'auto'} mt={'0'}/>
         <Projects />
         <Footer />
     </div>

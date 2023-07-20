@@ -14,9 +14,10 @@ export default function SocialMediaLinks() {
     <Flex
       gap={10}
       display={'flex'}
-      py={{ base: 10, md: 16 }}
+      py={{ base: 5, md: 8 }}
       alignItems={'center'} justifyContent={'center'}>
       <IconButton
+        colorScheme='teal'
         w={'50px'} h={'50px'}
         variant="outline"
         aria-label="LinkedIn icon"
@@ -25,6 +26,7 @@ export default function SocialMediaLinks() {
       <IconButton
         variant="outline"
         w={'50px'} h={'50px'}
+        colorScheme='teal'
         aria-label="Github icon"
         icon={<Icon as={FaGithub} w={'30px'} h={'30px'}/>}
       />
