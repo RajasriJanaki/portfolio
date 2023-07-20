@@ -13,6 +13,18 @@
   color: azure;
 }
 
+.grey-scheme {
+  background-color: #4A5568;
+  color: #F7FAFC;
+}
+
+.flex-box {
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

@@ -12,9 +12,7 @@ import {
 export default function SocialMediaLinks() {
   return (
     <Flex
-      gap={10}
-      display={'flex'}
-      py={{ base: 5, md: 8 }}
+      className="flex-box"
       alignItems={'center'} justifyContent={'center'}>
       <IconButton
         colorScheme='teal'
@@ -22,6 +20,7 @@ export default function SocialMediaLinks() {
         variant="outline"
         aria-label="LinkedIn icon"
         icon={<Icon as={FaLinkedin} w={'30px'} h={'30px'}/>}
+        onClick={() => window.open('https://www.linkedin.com/feed/','_blank')}
       />
       <IconButton
         variant="outline"
@@ -29,6 +28,7 @@ export default function SocialMediaLinks() {
         colorScheme='teal'
         aria-label="Github icon"
         icon={<Icon as={FaGithub} w={'30px'} h={'30px'}/>}
+        onClick={() => window.open('https://github.com/','_blank')}
       />
     </Flex>
   );

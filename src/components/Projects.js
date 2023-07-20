@@ -4,22 +4,20 @@ import {
     Stack,
     Heading,
     Flex,
-    Image,
-    Fade,
-    Button
+    Image
   } from '@chakra-ui/react';
-  import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
+  import { Card, CardBody } from '@chakra-ui/react'
   import { experience } from "../data/projects";
-  import Skills from './Skills';
 
   export default function Projects() {
     return (
       <Box p='20px'
         color={'#DFDCE3'} m={'10'} id='Projects'>
         <Flex
+          className="flex-box"
           direction='column'
           alignItems='space-around'
-          gap='10'>
+          >
             <Box>
               <Heading
                   fontWeight={200}
@@ -30,7 +28,9 @@ import {
                   </Text>
               </Heading>
             </Box>
-            <Flex direction='row' wrap='wrap' gap='10' alignItems={'center'} justifyContent={'center'}>
+            <Flex className="flex-box"
+                direction='row'
+                alignItems={'center'} justifyContent={'center'}>
                 {experience?.map((job) => {
                   return <>
                     {job.projects.map((project) => {
@@ -48,13 +48,11 @@ import {
                             maxH={{ base: '100px', sm: '200px' }}
                             maxW={{ base: '100px', sm: '200px' }}
                             src={job.logo}
-                            alt='Caffe Latte'
+                            alt={job.company}
                           />
-
                           <Stack>
                             <CardBody>
                               <Heading size='sm'>{project.title}</Heading>
-
                               <Text py='2'>
                                 {project.text}
                               </Text>
