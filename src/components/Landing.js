@@ -4,9 +4,7 @@ import {
     Container,
     Text,
     Stack,
-    Avatar,
-    HStack,
-    VStack,
+    Avatar
   } from '@chakra-ui/react';
 import profile from "../assets/images/avatar.jpg";
 import SocialMediaLinks from './SocialMediaLinks';
@@ -45,7 +43,7 @@ import Skills from "./Skills";
               Front-end developer
             </Heading>
           </Stack>
-          <Avatar py={{ base: 5, md: 5 }} w={'xs'} h={'xs'} src={profile}></Avatar>
+          <Avatar py={'5'} w={'xs'} h={'xs'} src={profile}></Avatar>
 
           <SocialMediaLinks />
           <Skills />

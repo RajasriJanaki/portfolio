@@ -1,18 +1,26 @@
 import Header from './components/Header';
-import { Divider } from '@chakra-ui/react'
 import './App.css';
-import Landing from './components/Landing';
-import Footer from './components/Footer';
+import { Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
 import Projects from './components/Projects';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-        <Header />
-        <Landing />
-        <Divider width={'80%'} ml={'auto'} mr={'auto'} mt={'0'}/>
-        <Projects />
-        <Footer />
+        <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+          <Header />
+          <div style={{ flex: 1 }}>
+            <Routes>
+              <Route path='/Home' Component={Home}></Route>
+              <Route path='/About Me' Component={About}></Route>
+              <Route path='/Projects' Component={Projects}></Route>
+              <Route path='/' Component={Home}></Route>
+            </Routes>
+          </div>
+          <Footer />
+        </div>
     </div>
   );
 }

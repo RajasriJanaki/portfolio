@@ -18,6 +18,11 @@
   color: #F7FAFC;
 }
 
+.blue-scheme {
+  background-color: #438496;
+  color: #DFDCE3;
+}
+
 .flex-box {
   display: flex;
   padding: 10px;
