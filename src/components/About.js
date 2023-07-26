@@ -25,10 +25,10 @@ const About = () => {
         ReactJS is my go-to framework, and I excel in developing interactive UIs using React.js with Redux architecture for efficient state management.
         Throughout my career, I've collaborated with Agile/Scrum teams, participating in the full software development life cycle.
       </Text>
-      <Text fontSize="lg" mt={4} textAlign="justify" mt='5'>
+      <Text fontSize="lg" textAlign="justify" mt='5'>
         &nbsp;&nbsp;I hold a Bachelor's degree in Computer Science and Engineering and have pursued certifications in front-end development and Agile methodologies.
       </Text>
-      <Text fontSize="lg" mt={4} textAlign="justify" mt='5'>
+      <Text fontSize="lg" textAlign="justify" mt='5'>
         &nbsp;&nbsp;My passion lies in crafting exceptional user experiences and staying at the forefront of emerging technologies.
         I'm open to exciting projects and collaborations, so feel free to&nbsp;
         <Link bg={'teal.500'} color="white.500" onClick={handleContactClick} fontSize={'2xl'}>
