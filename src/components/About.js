@@ -1,16 +1,13 @@
 import React, { useState } from 'react';
-import { Box, Heading, Text, Link, Highlight, useColorModeValue } from '@chakra-ui/react';
+import { Box, Heading, Text, Link } from '@chakra-ui/react';
 import ContactForm from './ContactForm';
 
 const About = () => {
   const [showContactForm, setShowContactForm] = useState(false);
-  const [highlighted, setHighlighted] = useState(true);
 
   const handleContactClick = () => {
     setShowContactForm(true);
   };
-
-  const highlightColor = useColorModeValue('teal.100', 'teal.700');
 
   return (
     <Box py={8} maxW="800px" mx="auto" fontFamily="Georgia, sans-serif">
