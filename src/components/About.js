@@ -10,7 +10,7 @@ const About = () => {
   };
 
   return (
-    <Box py={8} maxW="800px" mx="auto" fontFamily="Georgia, sans-serif">
+    <Box py={8} maxW="800px" mx="auto" fontFamily="Georgia, sans-serif" color={'#DFDCE3'}>
     <Heading
       fontWeight={200}
       fontSize={{ base: '2lg', sm: '2xl', md: '4xl' }}
