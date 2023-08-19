@@ -20,7 +20,7 @@ export default function SocialMediaLinks() {
         variant="outline"
         aria-label="LinkedIn icon"
         icon={<Icon as={FaLinkedin} w={'30px'} h={'30px'}/>}
-        onClick={() => window.open('https://www.linkedin.com/feed/','_blank')}
+        onClick={() => window.open('https://www.linkedin.com/in/rajasrijr55/','_blank')}
       />
       <IconButton
         variant="outline"
@@ -28,7 +28,7 @@ export default function SocialMediaLinks() {
         colorScheme='teal'
         aria-label="Github icon"
         icon={<Icon as={FaGithub} w={'30px'} h={'30px'}/>}
-        onClick={() => window.open('https://github.com/','_blank')}
+        onClick={() => window.open('https://github.com/RajasriJanaki','_blank')}
       />
     </Flex>
   );
